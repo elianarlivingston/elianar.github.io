@@ -1,0 +1,133 @@
+:root {
+    /* light */
+    --primary-base:#66ACFE ;
+    --primary-light:#CCE3FF ;
+    --primary-dark:#0074FD ;
+    --success: #48BB78;
+    --danger: #F56565 ;
+    --text-base: #4D4D4D;
+    --text-light: #7A7A7A;
+    --text-dark: #212121;
+    --bg-base: #f5f5f5 ;
+    --bg-light: #FFFFFF ;
+    --bg-dark:#ebebeb ;
+    --link: #406AFF;
+    --link-visited: #3457D4;
+    --transparent: transparent ;
+    --white: #FFFFFF;
+    --black: #000000; 
+     /* Spacing */
+     --space-0: 0;
+     --space-1: 0.25rem;
+     --space-2: 0.5rem;
+     --space-3: 0.75rem;
+     --space-4: 1rem;
+     --space-5: 1.25rem;
+     --space-6: 1.5rem;
+     --space-8: 2rem;
+     --space-10: 2.5rem;
+     --space-12: 3rem;
+     --space-16: 4rem;
+     --space-20: 5rem;
+     /* Border */
+     --border: 1px solid;
+     --border-1: 2px solid;
+     --border-2: 4px solid;  
+     --border-danger: var(--border) var(--danger);
+     --border-success: var(--border) var(--success);
+     /* Border Radius */
+     --rounded-1: .125rem;
+     --rounded-2: .25rem;
+     --rounded-3: .5rem;
+     --rounded-4: 1rem;
+     --rounded-5: 1.5rem;
+     --rounded-5: 1.5rem;
+     --rounded-full: 9999px;
+      /* Box Shadow */
+      --shadow-1: 0 1px 3px 0 rgba(0, 0,0, 0.1), 0 1px 2px 0 rgba(0, 0,0, 0.06);
+      --shadow-2: 0 4px 6px -1px rgba(0, 0,0, 0.1), 0 2px 4px -1px rgba(0, 0,0, 0.06);
+      --shadow-3: 0 10px 15px -3px rgba(0, 0,0, 0.1), 0 4px 6px -2px rgba(0, 0,0, 0.05);
+      --shadow-danger: 2px 0 15px -3px rgba(192, 50, 50, 0.445),0 2px 6px -2px rgba(192, 50, 50, 0.445);;
+      --shadow-success:2px 0 15px -3px rgba(44, 124, 68, 0.445),0 2px 6px -2px rgba(44, 124, 68, 0.445); ;
+      --shadow-focus:2px 0 15px -3px rgba(24, 40, 255, 0.308),0 2px 15px -3px rgba(9, 75, 255, 0.568); 
+      /* Font family */
+      --font-family: 'Nunito', sans-serif;
+     /* Font Size */
+     --base: 16px;
+     --ratio: 1.250;
+     --regular: var(--base);
+     --medium: calc(var(--regular) * var(--ratio));
+     --large: calc(var(--medium) * var(--ratio));
+     --xlarge: calc(var(--large) * var(--ratio));
+     --small: calc(var(--regular) / var(--ratio));
+     --xsmall: calc(var(--small) / var(--ratio));
+     --line-height: 1.2rem;
+     /* Font weight */
+     --weight-400: 400;
+     --weight-600: 600;
+     --weight-700: 700;
+     /* Text transform */
+     --text-capitalize: capitalize;
+     --text-uppercase: uppercase;
+     --text-lowercase: lowercase;
+     /* Transitions */
+     --transition-1: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+     --transition-2: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+     --transition-3:  cubic-bezier(0.390, 0.575, 0.565, 1.000);
+     --container-xs: var(--space-4);
+     --container-sm: var(--space-8);
+     --container-md: 768px;
+     --container-lg: calc(calc(100vw - 768px) / 2);
+     --container-xl: calc(calc(100vw - 1024px) / 2);
+     /* utils */
+     --sidebar: min(300px, 70%);
+     --header: 55px;
+     --footer: 180px;
+     /* img */
+     --filter: none;
+}
+
+/* mode dark  */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* dark */
+        --primary-base:#66ACFE ;
+        --primary-light:#CCE3FF ;
+        --primary-dark:#0074FD ;
+        --secondary-base: #FBB56F ;
+        --secondary-light: #FEDAB6;
+        --secondary-dark: #F9840F ;
+        --success: #48BB78;
+        --danger: #F56565 ;
+        --text-base: #B4BFCB;
+        --text-light: #9DA9BA;
+        --text-dark: #E2E4E6;
+        --bg-base: #3A4556 ;
+        --bg-light: #2D3848 ;
+        --bg-dark:#4A5568 ;
+        --link: #406AFF;
+        --link-visited: #3457D4;
+        --transparent: transparent ;
+        --white: #FFFFFF;
+        --black: #000000;
+
+        --filter: brightness(.8) contrast(1.2)
+        --shadow-1:none;
+        --shadow-2: none;
+        --shadow-3: none;
+        --shadow-warning: none;
+        --shadow-success: none;
+        --shadow-focus:2px 0 15px -3px rgba(58, 71, 255, 0.308),0 2px 15px -3px rgba(114, 116, 121, 0.568); 
+
+    }
+}
+@media screen and (min-width: 640px) {
+    :root {
+        --base: 18px
+    }
+}
+@media screen and (min-width: 1024px) {
+    :root {
+        --base: 20px
+    }
+}
