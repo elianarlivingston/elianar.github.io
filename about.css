@@ -1,0 +1,21 @@
+.about__header {
+    padding:var(--space-4) 0 ;
+} 
+.about__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title,
+.text{
+    padding: var(--space-4) 0;
+}
+
+.subtitle {
+    font-size: var(--large);
+    font-weight: var(--weight-700);
+    color: var(--text-dark);
+    order: -1;
+}
