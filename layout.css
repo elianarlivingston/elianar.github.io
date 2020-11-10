@@ -1,0 +1,109 @@
+.container {
+    padding: 0 var(--container-xs);
+}
+
+/* breackpoint: 320 | 640 | 768 | 1024 | 1280 */
+@media screen and (min-width: 320px) {
+    .container {
+        padding: 0 var(--container-xs);
+    }
+}
+@media screen and (min-width: 640px) {
+    .container {
+        padding: 0 var(--container-sm);
+    }
+}
+@media screen and (min-width: 800px) {
+    .container {
+        padding: 0 var(--container-lg);
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container {
+        padding: 0 var(--container-xl);
+    }
+}
+
+
+.header {
+    width: 100%;
+    height: var(--header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-light);
+    box-shadow: var(--shadow-2);
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: var(--header);
+}
+
+.footer {
+    width: 100%;
+    min-height: var(--footer);
+    background-color: var(--bg-light);
+    padding: var(--space-8) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-column {
+    width: 100%;
+    background-color: var(--bg-base);
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-column:first-child {
+    height: 100vh;
+}
+    .section-column__column {
+        flex:1 1 100%;
+        height: 50%;
+    }
+    @media screen and  (min-width: 768px)  {
+        .section-column__column {
+            flex-basis: 50%;
+            height: 100%;
+        }
+    }
+.section-cards {
+    width: 100%;
+    background-color: var(--bg-dark);
+}
+    .section-cards__content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .card {
+            width: 100%;
+            min-height: 180px;
+            margin-bottom: var(--space-4);
+        }
+        @media screen and (min-width: 400px) {
+            .card {
+                width: min(200px, calc(calc(100% / 2) - calc(var(--space-3) * 2)));
+                margin: var(--space-3);
+                height: 160px;
+            }
+        }
+        @media screen and (min-width: 480px) {
+            .card {
+                width: min(300px, calc(calc(100% / 2) - calc(var(--space-3) * 2)));
+                margin: var(--space-3);
+                min-height: 200px;
+            }
+        }
+        @media screen and (min-width: 714px) {
+            .card {
+                width: calc(calc(100% / 3) - calc(var(--space-3) * 2));
+                margin: var(--space-3);
+                min-height: 260px;
+            }
+        }
