@@ -1,0 +1,15 @@
+.section-cite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-light);
+}
+
+.section-cite__header {
+    order: 2;
+}
+
+.section-cite__image {
+    order: -1;
+}
