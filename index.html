@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="supported-color-schemes" content="light dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <!-- meta -->
+
+    <meta name="author" content="Eliana Rebeca Livingston" />
+    <meta name="description" content="Este portofalio es un trabajo p" />
+    <meta
+      name="keywords"
+      content="Este portofalio es ub trabajo práctico de modulo-1 de Ada"
+    />
+
+    <meta property="og:title" content="Portafolio" />
+    <meta
+      property="og:description"
+      content="Este portofalio es ub trabajo práctico de modulo-1 de Ada"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:site name" content="portafolio-ada" />
+    <meta
+      property="og:url"
+      content="https://blissful-dijkstra-26fe52.netlify.app"
+    />
+    <meta property="og:image" content="./img/Subtract.svg" />
     <title>Eliana Rebeca Livingston</title>
     <!-- vars -->
-    <link rel="stylesheet" href="./var.css">
+    <link rel="stylesheet" href="./var.css" />
     <!-- reset -->
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./reset.css" />
     <!-- layout -->
-    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./layout.css" />
     <!-- general styles -->
-    <link rel="stylesheet" href="./generalUI.css">
+    <link rel="stylesheet" href="./generalUI.css" />
     <!-- header and sidebar -->
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./header.css" />
     <!-- about -->
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./about.css" />
     <!-- contact -->
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./contact.css" />
     <!-- cite -->
-    <link rel="stylesheet" href="./cite.css">
+    <link rel="stylesheet" href="./cite.css" />
     <!-- CDN Google Font Dosis -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CDN FONTAWESOME SVG -->
     <script
       defer
@@ -35,443 +59,501 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header, sidebar and navigation -->
     <header class="container header">
-        <a href="#sidebar" class="button-open">
-            <i class="fas fa-bars icon-md color-gray"></i>
+      <a href="#sidebar" class="button-open">
+        <i class="fas fa-bars icon-md color-gray"></i>
+      </a>
+      <nav id="sidebar" class="sidebar">
+        <a href="#" class="button-close" aria-label="Close">
+          <i class="fas fa-times icon-sm color-gray"></i>
         </a>
-        <nav id="sidebar" class="sidebar">
-            <a href="#" class="button-close">
-                <i class="fas fa-times icon-sm color-gray"></i>
-            </a>
-            <ul class="sidebar__list">
-                <li class="sidebar__item">
-                    <a href="#about"  class="sidebar__link">Hola</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#skills" class="sidebar__link">Conocimientos</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#projects" class="sidebar__link">Proyectos</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="#contact" class="button button--large shadow-none">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="#about" class="sidebar__link">Hola</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#skills" class="sidebar__link">Conocimientos</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#projects" class="sidebar__link">Proyectos</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#contact" class="button button--large shadow-none"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main  class="main">
-        <!-- section about -->
-        <section id="about"  class="container section-column about" >
-            <header class="section-column__column about__header" >
-                <h1 class="title">
-                    <strong>Eliana Rebeca Livingston</strong>
-                </h1>
-                <p  class="subtitle">¡Hola, soy!</p>
-                <p class="text">Desarrolladora, violinista y bailarina de tango.</p>
-                <a href="#skills" class="button button--content">Lo que hago</a>
+    <main class="main">
+      <!-- section about -->
+      <section id="about" class="container section-column about">
+        <header class="section-column__column about__header">
+          <h1 class="title">
+            <strong>Eliana Rebeca Livingston</strong>
+          </h1>
+          <p class="subtitle">¡Hola, soy!</p>
+          <p class="text">Desarrolladora, violinista y bailarina de tango.</p>
+          <a href="#skills" class="button button--content">Lo que hago</a>
+        </header>
+        <figure class="section-column__column about__image">
+          <img src="./img/coding_.svg" alt="Image banner" />
+        </figure>
+      </section>
+      <!-- section skills -->
+      <section id="skills" class="container section-cards py-16">
+        <header class="px-6">
+          <h2 class="title">Conocimientos</h2>
+          <p class="text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
+            error.
+          </p>
+        </header>
+        <div class="section-cards__content">
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> HTML 5 </cite>
+              </h3>
             </header>
-            <figure class="section-column__column about__image">
-                <img src="./img/coding_.svg" alt="Image banner">
+            <figure class="card__figure">
+              <i class="devicon-html5-plain colored image-icon"></i>
             </figure>
-        </section>
-        <!-- section skills -->
-        <section id="skills" class="container section-cards py-16 ">
-            <header class="px-6">
-                <h2 class="title">Conocimientos</h2>
-                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, error.</p>
+          </article>
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> CSS </cite>
+              </h3>
             </header>
-            <div class="section-cards__content">
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                HTML 5
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-html5-plain colored image-icon"></i>
-                    </figure>
-                </article>
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                CSS
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-css3-plain colored image-icon"></i>
-                    </figure>
-                </article>
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                Sass
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-sass-original colored image-icon"></i>
-                    </figure>
-                </article>
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                JavaScript
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-javascript-plain colored image-icon"></i>
-                    </figure>
-                </article>
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                React
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-react-original colored image-icon"></i>
-                    </figure>
-                </article>
-                <article class="card card-style">
-                    <header class="card__header">
-                        <h3 class="title">
-                            <cite>
-                                Git
-                            </cite>
-                        </h3>
-                    </header>
-                    <figure class="card__figure">
-                        <i class="devicon-git-plain colored image-icon"></i>
-                    </figure>
-                </article>
-            </div>
-        </section>
-        <!-- section cite -->
-        <section class="container section-cite py-16">
-            <header class="section-cite__header">
-                <h2 class="title">Someone</h2>
-            </header>
-            <blockquote class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id beatae officia, ex nam voluptatibus blanditiis adipisci nostrum eos laboriosam illum reprehenderit animi earum dolore modi culpa facilis est rem perspiciatis ad. Possimus reprehenderit dolorum deleniti animi, asperiores fuga quisquam.
-            </blockquote>
-            <figure class="section-cite__image">
-                <i class="fas fa-quote-right image-icon color-gray"></i>
+            <figure class="card__figure">
+              <i class="devicon-css3-plain colored image-icon"></i>
             </figure>
-        </section>
-        <!-- section projects -->
-        <section id="projects"  class="container section-cards py-16">
-            <header>
-                <h2 class="title">Proyectos</h2>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque commodi facilis accusantium nam exercitationem minima, odit tenetur quas rerum dolor.</p>
+          </article>
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> Sass </cite>
+              </h3>
             </header>
-            <div class="section-cards__content">
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                                <cite>
-                                    Porfolio
-                                </cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/Subtract.svg" alt="Porfolio image">
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                                <cite>
-                                    Generador de memes
-                                </cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/social_media.svg" alt="Image of the meme generator project">
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                                <cite>
-                                    Match 3
-                                </cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/slot_machine.svg" alt="Match 3 project image">
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                              <cite>Controlador de gastos</cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/wallet.svg" alt="Expense Controller project image" />
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                              <cite>Administrador de reuniones</cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/video_call.svg" alt="Meeting manager project image" />
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3>
-                              <cite>Todo App</cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/checklist_.svg" alt="Todo app project image" />
-                        </figure>
-                    </a>
-                </article>
-                <article class="card">
-                    <a href="#" class="card-style w-full  w-height">
-                        <header>
-                            <h3 class="title">
-                              <cite>Buscador de películas</cite>
-                            </h3>
-                        </header>
-                        <figure class="card__figure">
-                            <img src="./img/resting_.svg" alt="mage of the film search project" />
-                        </figure>
-                    </a>
-                </article>
-            </div>
-        </section>
-        <div id="contact"  class="container section-column contact">
-            <section class="section-column__column py-16">
-                <header>
-                    <h2 class="title">Contactame</h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum cupiditate tenetur, unde rem placeat officia! Consequuntur deserunt dolor aspernatur, molestiae voluptatibus nam suscipit temporibus impedit repellendus quam reprehenderit, repudiandae eum?</p>
-                </header>
-                <ul>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            <div class="list__container-icon">
-                                <i class="fab fa-twitter icon-md  color-primary"></i>
-                            </div>
-                            <address class="list__address">
-                                elianarlivingston@gmail.com
-                            </address>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            <div class="list__container-icon">
-                                <i class="fab fa-github-alt icon-md  color-primary"></i>
-                            </div>
-                            <address class="list__address">
-                                elianarlivingston
-                            </address>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            <div class="list__container-icon">
-                                <i class="fab fa-linkedin-in icon-md color-primary"></i>
-                            </div>
-                            <address class="list__address">
-                                Eliana Rebeca Livingston
-                            </address>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            <div class="list__container-icon">
-                                <i class="fas fa-envelope  icon-md color-primary icon--visible"></i> 
-                                <i class="fas fa-envelope-open icon-md  color-primary icon--hidden"></i>
-                            </div>
-                            <address class="list__address">
-                                Eliana Rebeca Livingston
-                            </address>
-                        </a>
-                    </li>
-                </ul>
-            </section> 
-            <section class="section-column__column py-16">
-               <header>
-                    <h2 class="title">Escribeme</h2>
-                </header>
-                <form class="form" autocomplete="on">
-                    <fieldset class="control-group">
-                      <div class="w-full">
-                        <label for="name">Nombre</label>
-                        <div class="input-group">
-                          <input
-                            id="name"
-                            class="input-group__input"
-                            type="text"
-                            placeholder="Escriba su nombre aquí"
-                            minlength="4"
-                            maxlength="60"
-                            required
-                          />
-                          <i
-                            class="far fa-times-circle input-group__icon icon--invalid"
-                          ></i>
-                          <i
-                            class="far fa-check-circle input-group__icon icon--valid"
-                          ></i>
-                          <div class="input-group__message">El campo debe tener al menos 4 caracteres</div>
-                        </div>
-                      </div>
-                      <div class="w-full">
-                        <label for="surname">Apellido</label>
-                        <div class="input-group">
-                          <input
-                            id="surname"
-                            class="input-group__input"
-                            type="text"
-                            minlength="4"
-                            maxlength="60"
-                            placeholder="Escriba su apellido aquí"
-                            required
-                          />
-                          <i
-                            class="far fa-times-circle input-group__icon icon--invalid"
-                          ></i>
-                          <i
-                            class="far fa-check-circle input-group__icon icon--valid"
-                          ></i>
-                          <div class="input-group__message">El campo debe tener al menos 4 caracteres</div>
-                        </div>
-                      </div>
-                    </fieldset>
-                    <div>
-                      <label for="email">Email</label>
-                      <div class="input-group">
-                        <input
-                          id="email"
-                          class="input-group__input"
-                          type="email"
-                          placeholder="Escriba su email aquí"
-                          required
-                        />
-                        <i
-                          class="far fa-times-circle input-group__icon icon--invalid"
-                        ></i>
-                        <i
-                          class="far fa-check-circle input-group__icon icon--valid"
-                        ></i>
-                        <div class="input-group__message">Email no válido</div>
-                      </div>
-                    </div>
-                    <div>
-                      <label for="message">Mensaje</label>
-                      <div class="input-group">
-                        <textarea
-                          id="message"
-                          class="input-group__input"
-                          placeholder="Escribe tu mensaje!"
-                          minlength="10"
-                          maxlength="150"
-                          required
-                        ></textarea>
-                        <i
-                          class="far fa-times-circle input-group__icon icon--invalid"
-                        ></i>
-                        <i
-                          class="far fa-check-circle input-group__icon icon--valid"
-                        ></i>
-                        <p class="input-group__info">10/150</p>
-                        <div class="input-group__message">
-                          Debes escribir de al menos 10 caracteres
-                        </div>
-                      </div>
-                    </div>
-                    <div class="button-group">
-                      <button type="reset" class="button button--reset shadow-none">
-                        Resetear
-                      </button>
-                      <button type="submit" class="button button--submit" >
-                        Enviar
-                      </button>
-                    </div>
-                  </form>
-            </section>
+            <figure class="card__figure">
+              <i class="devicon-sass-original colored image-icon"></i>
+            </figure>
+          </article>
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> JavaScript </cite>
+              </h3>
+            </header>
+            <figure class="card__figure">
+              <i class="devicon-javascript-plain colored image-icon"></i>
+            </figure>
+          </article>
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> React </cite>
+              </h3>
+            </header>
+            <figure class="card__figure">
+              <i class="devicon-react-original colored image-icon"></i>
+            </figure>
+          </article>
+          <article class="card card-style">
+            <header class="card__header">
+              <h3 class="title">
+                <cite> Git </cite>
+              </h3>
+            </header>
+            <figure class="card__figure">
+              <i class="devicon-git-plain colored image-icon"></i>
+            </figure>
+          </article>
         </div>
+      </section>
+      <!-- section cite -->
+      <section class="container section-cite py-16">
+        <header class="section-cite__header">
+          <h2 class="title">Someone</h2>
+        </header>
+        <blockquote class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id
+          beatae officia, ex nam voluptatibus blanditiis adipisci nostrum eos
+          laboriosam illum reprehenderit animi earum dolore modi culpa facilis
+          est rem perspiciatis ad. Possimus reprehenderit dolorum deleniti
+          animi, asperiores fuga quisquam.
+        </blockquote>
+        <figure class="section-cite__image" aria-hidden="true">
+          <i class="fas fa-quote-right image-icon color-gray"></i>
+        </figure>
+      </section>
+      <!-- section projects -->
+      <section id="projects" class="container section-cards py-16">
+        <header>
+          <h2 class="title">Proyectos</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            commodi facilis accusantium nam exercitationem minima, odit tenetur
+            quas rerum dolor.
+          </p>
+        </header>
+        <div class="section-cards__content">
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite> Porfolio </cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img src="./img/Subtract.svg" alt="Porfolio image" />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite> Generador de memes </cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img
+                  src="./img/social_media.svg"
+                  alt="Image of the meme generator project"
+                />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite> Match 3 </cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img src="./img/slot_machine.svg" alt="Match 3 project image" />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite>Controlador de gastos</cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img
+                  src="./img/wallet.svg"
+                  alt="Expense Controller project image"
+                />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite>Administrador de reuniones</cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img
+                  src="./img/video_call.svg"
+                  alt="Meeting manager project image"
+                />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3>
+                  <cite>Todo App</cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img src="./img/checklist_.svg" alt="Todo app project image" />
+              </figure>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#" class="card-style w-full w-height">
+              <header>
+                <h3 class="title">
+                  <cite>Buscador de películas</cite>
+                </h3>
+              </header>
+              <figure class="card__figure">
+                <img
+                  src="./img/resting_.svg"
+                  alt="mage of the film search project"
+                />
+              </figure>
+            </a>
+          </article>
+        </div>
+      </section>
+      <div id="contact" class="container section-column contact">
+        <section class="section-column__column py-16">
+          <header>
+            <h2 class="title">Contactame</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum cupiditate tenetur, unde rem placeat officia!
+              Consequuntur deserunt dolor aspernatur, molestiae voluptatibus nam
+              suscipit temporibus impedit repellendus quam reprehenderit,
+              repudiandae eum?
+            </p>
+          </header>
+          <ul>
+            <li class="list__item">
+              <a href="https://twitter.com/rebecca_eliana" class="list__link">
+                <div class="list__container-icon">
+                  <i
+                    class="fab fa-twitter icon-md color-primary"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <address class="list__address" aria-label="Profile twitter">
+                  elianarlivingston@gmail.com
+                </address>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="https://github.com/elianarlivingston" class="list__link">
+                <div class="list__container-icon">
+                  <i
+                    class="fab fa-github-alt icon-md color-primary"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <address class="list__address" aria-label="Profile github">
+                  elianarlivingston
+                </address>
+              </a>
+            </li>
+            <li class="list__item">
+              <a
+                href="https://www.linkedin.com/in/eliana-rebeca-livingston-838218156/"
+                class="list__link"
+              >
+                <div class="list__container-icon">
+                  <i
+                    class="fab fa-linkedin-in icon-md color-primary"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <address class="list__address" aria-label="Profile linkedin">
+                  Eliana Rebeca Livingston
+                </address>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="mailto:elianarlivingston@gmail.com" class="list__link">
+                <div class="list__container-icon">
+                  <i
+                    class="fas fa-envelope icon-md color-primary icon--visible"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="fas fa-envelope-open icon-md color-primary icon--hidden"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <address class="list__address" aria-label="Addresss email">
+                  elianarlivingston@gmail.com
+                </address>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section-column__column py-16">
+          <header>
+            <h2 class="title">Escribeme</h2>
+          </header>
+          <form class="form" autocomplete="on">
+            <fieldset class="control-group">
+              <div class="w-full">
+                <label for="name">Nombre</label>
+                <div class="input-group">
+                  <input
+                    id="name"
+                    class="input-group__input"
+                    type="text"
+                    placeholder="Escriba su nombre aquí"
+                    minlength="4"
+                    maxlength="60"
+                    required
+                  />
+                  <i
+                    class="far fa-times-circle input-group__icon icon--invalid"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="far fa-check-circle input-group__icon icon--valid"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="input-group__message">
+                    El campo debe tener al menos 4 caracteres
+                  </div>
+                </div>
+              </div>
+              <div class="w-full">
+                <label for="surname">Apellido</label>
+                <div class="input-group">
+                  <input
+                    id="surname"
+                    class="input-group__input"
+                    type="text"
+                    minlength="4"
+                    maxlength="60"
+                    placeholder="Escriba su apellido aquí"
+                    required
+                  />
+                  <i
+                    class="far fa-times-circle input-group__icon icon--invalid"
+                    aria-hidden="true"
+                  ></i>
+                  <i
+                    class="far fa-check-circle input-group__icon icon--valid"
+                    aria-hidden="true"
+                  ></i>
+                  <div class="input-group__message">
+                    El campo debe tener al menos 4 caracteres
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div>
+              <label for="email">Email</label>
+              <div class="input-group">
+                <input
+                  id="email"
+                  class="input-group__input"
+                  type="email"
+                  placeholder="Escriba su email aquí"
+                  required
+                />
+                <i
+                  class="far fa-times-circle input-group__icon icon--invalid"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="far fa-check-circle input-group__icon icon--valid"
+                  aria-hidden="true"
+                ></i>
+                <div class="input-group__message">Email no válido</div>
+              </div>
+            </div>
+            <div>
+              <label for="message">Mensaje</label>
+              <div class="input-group">
+                <textarea
+                  id="message"
+                  class="input-group__input"
+                  placeholder="Escribe tu mensaje!"
+                  minlength="10"
+                  maxlength="150"
+                  required
+                ></textarea>
+                <i
+                  class="far fa-times-circle input-group__icon icon--invalid"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="far fa-check-circle input-group__icon icon--valid"
+                  aria-hidden="true"
+                ></i>
+                <p class="input-group__info">10/150</p>
+                <div class="input-group__message">
+                  Debes escribir de al menos 10 caracteres
+                </div>
+              </div>
+            </div>
+            <div class="button-group">
+              <button type="reset" class="button button--reset shadow-none">
+                Resetear
+              </button>
+              <button type="submit" class="button button--submit">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <!-- footer -->
     <footer class="footer">
-        <ul class="list-row">
-            <li class="list__item">
-                <a href="#" class="list__link">
-                    <div class="list__container-icon">
-                        <i class="fab fa-twitter icon-md  color-primary"></i>
-                    </div>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="list__link">
-                    <div class="list__container-icon">
-                        <i class="fab fa-github-alt icon-md  color-primary"></i>
-                    </div>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="list__link">
-                    <div class="list__container-icon">
-                        <i class="fab fa-linkedin-in icon-md color-primary"></i>
-                    </div>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="#" class="list__link">
-                    <div class="list__container-icon">
-                        <i class="fas fa-envelope  icon-md color-primary icon--visible"></i> 
-                        <i class="fas fa-envelope-open icon-md  color-primary icon--hidden"></i>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <ul class="list-row flex-wrap">
-            <li  class="list__item mx-2">
-                <a href="#about"  class="list__link color-gray">Hola</a>
-            </li>
-            <li class="list__item mx-2">
-                <a href="#skills" class="list__link color-gray">Conocimientos</a>
-            </li>
-            <li class="list__item mx-2">
-                <a href="#projects" class="list__link color-gray">Proyectos</a>
-            </li>
-            <li class="list__item mx-2">
-                <a href="#contact" class="list__link color-gray">Contacto</a>
-            </li>
-        </ul>
-        <p class="text">
-            <small>Eliana Rebeca Livingston</small>
-        </p> 
+      <ul class="list-row">
+        <li class="list__item">
+          <a href="#" class="list__link">
+            <div class="list__container-icon">
+              <i
+                class="fab fa-twitter icon-md color-primary"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">
+            <div class="list__container-icon">
+              <i
+                class="fab fa-github-alt icon-md color-primary"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">
+            <div class="list__container-icon">
+              <i
+                class="fab fa-linkedin-in icon-md color-primary"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">
+            <div class="list__container-icon">
+              <i
+                class="fas fa-envelope icon-md color-primary icon--visible"
+                aria-hidden="true"
+              ></i>
+              <i
+                class="fas fa-envelope-open icon-md color-primary icon--hidden"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-row flex-wrap">
+        <li class="list__item mx-2">
+          <a href="#about" class="list__link color-gray">Hola</a>
+        </li>
+        <li class="list__item mx-2">
+          <a href="#skills" class="list__link color-gray">Conocimientos</a>
+        </li>
+        <li class="list__item mx-2">
+          <a href="#projects" class="list__link color-gray">Proyectos</a>
+        </li>
+        <li class="list__item mx-2">
+          <a href="#contact" class="list__link color-gray">Contacto</a>
+        </li>
+      </ul>
+      <p class="text">
+        <small>Eliana Rebeca Livingston</small>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
